@@ -65,6 +65,7 @@ export const useFirestore = (collection) => {
   const deleteDocument = async (id) => {};
 
   useEffect(() => {
+    setIsCancelled(false);
     return () => setIsCancelled(true);
   }, []);
 
